@@ -4,26 +4,26 @@ module.exports = (api) => {
     const presets = [
         [
             '@babel/preset-env',
-        {
+            {
             targets: {
                 chrome: '79',
             },
             useBuiltIns: 'entry',
             corejs: 3,
-        },
-            ],
-            [
+            },
+        ],
+        [
             '@babel/preset-react',
             {
-                development: !isProduction,
+            development: !isProduction,
             },
-            ],
+        ],
         ];
-
+    
         const plugins = [];
-
+    
         return {
-            presets,
-            plugins,
+        presets,
+        plugins,
         };
-        };
+};
