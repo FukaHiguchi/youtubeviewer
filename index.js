@@ -7,6 +7,7 @@ const router = express.Router();
 const server = app.listen(3000, function () {
     console.log(`Node.js is listening to PORT: ${server.address().port}`);
 });
+app.use('/api',require('./api'));
 
 // 静的ファイルのルーティング
 router.use(express.static('public'));

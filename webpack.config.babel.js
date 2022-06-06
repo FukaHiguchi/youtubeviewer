@@ -18,6 +18,7 @@ export default (env, args) => {
             path: path.join(__dirname, './public/js/'),
             filename: 'app.js',
         },
+        
         module: { rules },
         resolve: {
             modules: ['node_modules'],
