@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Image from '~/components/atoms/Image';
 import Typography from '~/components/atoms/Typography';
 
@@ -102,7 +102,7 @@ const VideosListItemContainer = ({
     presenter,
 }) => {
   // ページ遷移をさせるため、useHistoryを使ってhistoryオブジェクトを取得
-    const history = useHistory();
+    const history = useNavigate();
     return presenter({
         className,
         onClick: () => {
